@@ -32,6 +32,10 @@
                                 <rect key="frame" x="20" y="118" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RTU-ud-tRk"/>
+                                    <action selector="rest:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="k9E-gh-17W"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-4V-KhX">
                                 <rect key="frame" x="180" y="174" width="240" height="128"/>
@@ -56,6 +60,9 @@
                             <constraint firstItem="Nsh-2k-Ey2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wuv-7X-7nG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="JJg-P0-5W2" id="UMr-Zn-l7s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
