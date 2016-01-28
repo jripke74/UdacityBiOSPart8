@@ -33,19 +33,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RTU-ud-tRk"/>
-                                    <action selector="rest:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="k9E-gh-17W"/>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="XMy-vY-h7p"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Hub-SI-7fJ"/>
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ohW-4V-KhX">
-                                <rect key="frame" x="180" y="174" width="240" height="128"/>
+                                <rect key="frame" x="20" y="174" width="560" height="235"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="AZQ-Mi-dOi"/>
-                                    <constraint firstAttribute="height" constant="128" id="db2-gO-qbT"/>
+                                    <constraint firstAttribute="width" constant="560" id="AZQ-Mi-dOi"/>
+                                    <constraint firstAttribute="height" constant="235" id="db2-gO-qbT"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1744041227" green="0.40034415579999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -54,6 +54,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JJg-P0-5W2" secondAttribute="trailing" id="Bsy-N3-7fk"/>
                             <constraint firstItem="JJg-P0-5W2" firstAttribute="top" secondItem="Nsh-2k-Ey2" secondAttribute="bottom" constant="17" id="DNM-e8-wMh"/>
                             <constraint firstItem="Nsh-2k-Ey2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="OJi-0p-Kkj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ohW-4V-KhX" secondAttribute="leading" id="euM-s5-1co"/>
                             <constraint firstAttribute="leadingMargin" secondItem="JJg-P0-5W2" secondAttribute="leading" id="gda-XB-fJf"/>
                             <constraint firstItem="ohW-4V-KhX" firstAttribute="top" secondItem="JJg-P0-5W2" secondAttribute="bottom" constant="26" id="naB-5Z-cYH"/>
                             <constraint firstItem="ohW-4V-KhX" firstAttribute="centerX" secondItem="JJg-P0-5W2" secondAttribute="centerX" id="sm8-aj-hd0"/>
@@ -61,7 +62,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameField" destination="JJg-P0-5W2" id="UMr-Zn-l7s"/>
+                        <outlet property="lyricsView" destination="ohW-4V-KhX" id="4n6-fu-ZNa"/>
+                        <outlet property="nameField" destination="JJg-P0-5W2" id="XG6-dr-toQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
